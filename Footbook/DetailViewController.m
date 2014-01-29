@@ -7,45 +7,43 @@
 //
 
 #import "DetailViewController.h"
+#import "MasterViewController.h"
+#import "Friend.h"
 
-@interface DetailViewController ()
-- (void)configureView;
+
+@interface DetailViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+{
+    __weak IBOutlet UILabel *nameLabel;
+    Friend *friend;
+    __weak IBOutlet UICollectionView *imageCollectionView;
+    __weak IBOutlet UIImageView *footImageView;
+    __weak IBOutlet UITableView *commentTableView;
+    NSMutableArray *footImageURL;
+}
 @end
 
 @implementation DetailViewController
 
-#pragma mark - Managing the detail item
-
-- (void)setDetailItem:(id)newDetailItem
+-(void)setDetailItem:(Friend*)newFriend
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
-    }
+    friend = newFriend;
+    self.title = friend.name;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+
 }
 
-- (void)didReceiveMemoryWarning
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return nil;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 0;
 }
 
 @end

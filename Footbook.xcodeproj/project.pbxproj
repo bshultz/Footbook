@@ -25,6 +25,9 @@
 		9A7275831899951600E01B13 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A72755E1899951600E01B13 /* CoreData.framework */; };
 		9A72758B1899951600E01B13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A7275891899951600E01B13 /* InfoPlist.strings */; };
 		9A72758D1899951600E01B13 /* FootbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A72758C1899951600E01B13 /* FootbookTests.m */; };
+		9A72759E1899C69500E01B13 /* Comments.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A72759D1899C69500E01B13 /* Comments.m */; };
+		9A7275A11899C69600E01B13 /* ImageURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7275A01899C69600E01B13 /* ImageURL.m */; };
+		9A7275A41899C69600E01B13 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7275A31899C69600E01B13 /* Friend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		9A7275881899951600E01B13 /* FootbookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FootbookTests-Info.plist"; sourceTree = "<group>"; };
 		9A72758A1899951600E01B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A72758C1899951600E01B13 /* FootbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FootbookTests.m; sourceTree = "<group>"; };
+		9A72759C1899C69500E01B13 /* Comments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comments.h; sourceTree = "<group>"; };
+		9A72759D1899C69500E01B13 /* Comments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comments.m; sourceTree = "<group>"; };
+		9A72759F1899C69600E01B13 /* ImageURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageURL.h; sourceTree = "<group>"; };
+		9A7275A01899C69600E01B13 /* ImageURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageURL.m; sourceTree = "<group>"; };
+		9A7275A21899C69600E01B13 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		9A7275A31899C69600E01B13 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +139,12 @@
 				9A7275731899951600E01B13 /* MasterViewController.m */,
 				9A7275751899951600E01B13 /* DetailViewController.h */,
 				9A7275761899951600E01B13 /* DetailViewController.m */,
+				9A7275A21899C69600E01B13 /* Friend.h */,
+				9A7275A31899C69600E01B13 /* Friend.m */,
+				9A72759F1899C69600E01B13 /* ImageURL.h */,
+				9A7275A01899C69600E01B13 /* ImageURL.m */,
+				9A72759C1899C69500E01B13 /* Comments.h */,
+				9A72759D1899C69500E01B13 /* Comments.m */,
 				9A7275781899951600E01B13 /* Images.xcassets */,
 				9A72756F1899951600E01B13 /* Footbook.xcdatamodeld */,
 				9A7275611899951600E01B13 /* Supporting Files */,
@@ -265,7 +280,10 @@
 			files = (
 				9A7275771899951600E01B13 /* DetailViewController.m in Sources */,
 				9A7275741899951600E01B13 /* MasterViewController.m in Sources */,
+				9A7275A11899C69600E01B13 /* ImageURL.m in Sources */,
+				9A7275A41899C69600E01B13 /* Friend.m in Sources */,
 				9A72756B1899951600E01B13 /* AppDelegate.m in Sources */,
+				9A72759E1899C69500E01B13 /* Comments.m in Sources */,
 				9A7275711899951600E01B13 /* Footbook.xcdatamodeld in Sources */,
 				9A7275671899951600E01B13 /* main.m in Sources */,
 			);
